@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestionnaire de Tâches</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-6">
+  <div class="max-w-xl mx-auto bg-white p-6 rounded shadow">
+    <h1 class="text-2xl font-bold mb-4">Ma Liste de Tâches</h1>
+
+    <!-- Formulaire -->
+    <form id="taskForm">
+      <input type="hidden" id="editingTaskId" />
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+        <input id="taskInput" type="text" placeholder="Ajouter une tâche"
+          class="p-3 rounded-xl border border-gray-300" />
+
+        <select id="taskStatus" class="p-3 rounded-xl border border-gray-300">
+          <option value="false">Non faite</option>
+          <option value="true">Faite</option>
+        </select>
+      </div>
+
+      <div class="text-center mb-6">
+        <button type="submit"
+          class="bg-purple-600 text-white px-6 py-3 rounded-xl hover:bg-purple-700">
+          Enregistrer
+        </button>
+      </div>
+    </form>
+
+    <!-- Tableau des tâches -->
+    <div id="taskList" class="overflow-x-auto">
+      <table class="min-w-full text-sm text-left border border-gray-300 rounded-xl">
+        <thead class="bg-purple-100 text-purple-800 uppercase">
+          <tr>
+            <th class="px-6 py-3">Tâche</th>
+            <th class="px-6 py-3">Statut</th>
+            <th class="px-6 py-3">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="taskTable" class="bg-white divide-y divide-gray-200">
+          <!-- Tâches insérées dynamiquement ici -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+<script src="script.js"></script>
+</body>
+</html>
+
