@@ -21,5 +21,5 @@ Ce projet est une petite application web développée dans le cadre d’un test 
 
 1. **Cloner le projet**
    ```bash
-   git clone https://github.com/TON-NOM-DUTILISATEUR/nom-du-repo.git
-   cd nom-du-repo
+   git clone https://github.com/marienoukt/todo-app-stage.git
+   cd todo-app-stage
