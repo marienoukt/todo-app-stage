@@ -23,3 +23,12 @@ Ce projet est une petite application web développée dans le cadre d’un test 
    ```bash
    git clone https://github.com/marienoukt/todo-app-stage.git
    cd todo-app-stage
+
+2. **Installer les dépendances** :
+npm install
+
+3. **Lancer le serveur** :
+node server.js
+
+4. **Ouvrir dans un navigateur** :
+http://localhost:3000
